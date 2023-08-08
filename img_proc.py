@@ -60,10 +60,6 @@ class Img:
             rotated_data.append(rotated_row)
         self.data = rotated_data
 
-    def salt_n_pepper(self):
-        # TODO remove the `raise` below, and write your implementation
-        raise NotImplementedError()
-
     def concat(self, other_img, direction='horizontal'):
         if not isinstance(other_img, Img):
             raise TypeError("The 'other_img' parameter must be an instance of the Img Class.")
@@ -105,9 +101,4 @@ class Img:
 
             # Store the concatenated data in the instance attribute
             self.data = combined_data
-
-    def segment(self):
-        # TODO remove the `raise` below, and write your implementation
-        raise NotImplementedError()
-
 
